@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <button type="button" class="btn btn-info" data-toggle="modal" data-target="#demoModal">
+                Warning
+            </button>
+            <div class="modal fade" id="demoModal">
+                <div class="modal-dialog modal-dialog-centered"> <!--for resizing modal: small->modal-sm, big->modal-lg-->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title">Warning</h4>
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+                        <div class="modal-body">
+                            Restart the system to avoid any failed updates!
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-danger" data-dismiss="modal">Update failed</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

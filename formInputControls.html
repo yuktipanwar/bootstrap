@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Bootstrap Form Input Example</title>
+        <meta charset ="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+    </head>
+    <body>
+        <div class="container">
+            <h2>Student</h2>
+
+            <form action="new.php">
+                <div class="form group">
+                    <label for="fname">First Name: </label>
+                    <input type="text" class="form-control" id="frame" name="firstname">
+                </div>
+
+                <div class ="form-group">
+                    <label for="lname">Last Name</label>
+                    <input type="text" class="form-control" id="lanme" name="lastname">
+                </div>
+
+                <div class ="form-group">
+                    <label for="pwd">Password</label>
+                    <input type="password" class="form-control" id="pwd" name="password">
+                </div>
+
+                <div class="form-group">
+                    <label for="address">Address :</label>
+                    <textarea class="form-control" rows="7" id="address"></textarea> <!--resizing the form control : .form-control-sm: small, .form-control-lg:large-->
+                </div>
+                <div class="form-check">
+                    <label class="form-check-label" for="ch1">
+                        <input type="checkbox" class="form-check-input" id="ch1" name="opt1" value="BCA">BCA
+                    </label>
+                </div>
+                <div class="form-check">
+                    <label class="form-check-label" for="ch1">
+                        <input type="checkbox" class="form-check-input" id="ch2" name="opt1" value="MCA">MCA
+                    </label>
+                </div>
+
+                <div class="form-check">
+                    <label class="form-check-label" for="ch2">
+                        <input  type="checkbox" class="form-check-input" id="ch1" name="opt1" value="BCA">BCA
+                    </label>
+                </div>
+
+
+
+                <div class="form-check">
+                    <label class="form-check-label" for="rd1">
+                        <input type="radio" class="form-check-input" id="ch1" name="opt1" value="female">female
+                    </label>
+                </div>
+                <div class="form-check">
+                    <label class="form-check-label" for="rd1">
+                        <input type="radio" class="form-check-input" id="ch2" name="opt1" value="male">male
+                    </label>
+                </div>
+
+                <div class="form-groupd">
+                    <label for="work">Select your priority</label>
+                    <select class="from-control" id="work">
+                        <option>Work-from-home</option>
+                        <option>Contractual</option>
+                        <option>Full-Time</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="range">Expertise Level</label>
+                    <input type="range" class="form-control-range" id="fname">
+                </div>
+
+                <div class="form-group">
+                    <label for="resume">Resume</label>
+                    <input type="file" class="form-control-file border" name="file">
+                </div>
+
+
+                <button type="submit" class="btn btn-secondary">Submit</button>
+
+            </form>
+        </div>
+    </body>
+</html>
